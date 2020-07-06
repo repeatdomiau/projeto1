@@ -95,16 +95,9 @@
                     </svg>
                 </h3>
                 <ul id="lista-carrinho">
-                    <li>
-                        <img src="./imagens/{{IMAGEM}}" />
-                        <span>{{NOME}}</span>
-                        <span>R$ {{PRECO}}</span>
-                        <input type='number' class="qtd" value='1' min='1' max="5" />
-                        <button data-id='{{ID}}' class="remover-item"></button>
-                    </li>
                 </ul>
                 <div class="total">
-                    <p>Total: R$ <span id='total'>0,00</span></p>
+                    <p>Total: <span id='total'>0,00</span></p>
                 </div>
             </div>
         </div>
@@ -114,7 +107,7 @@
             <img src="./imagens/{{IMAGEM}}" />
             <span>{{NOME}}</span>
             <span>R$ {{PRECO}}</span>
-            <input type='number' class="qtd" value='1' min='1' max="5" data-id="{{ID}}" />
+            <input type='number' class="qtd" value='{{QUANTIDADE}}' min='1' max="5" data-id="{{ID}}" />
             <button data-id='{{ID}}' class="remover-item"></button>
         </li>
     </template>
