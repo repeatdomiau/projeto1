@@ -21,66 +21,6 @@
                     </svg>
                 </h3>
                 <ul id="lista-produtos">
-                    <li>
-                        <img src='./imagens/note1.webp' />
-                        <h4>Note 1</h4>
-                        <div class="action-buttons">
-                            <button>Detalhes</button>
-                            <button data-id='1' data-name='note 1' data-image="note1.webp" data-price="2000" data-quantity="1">
-                                Comprar
-                            </button>
-                        </div>
-                    </li>
-                    <li>
-                        <img src='./imagens/note2.webp' />
-                        <h4>Note 2</h4>
-                        <div class="action-buttons">
-                            <button>Detalhes</button>
-                            <button data-id='2' data-name='note 2' data-image="note2.webp" data-price="2500" data-quantity="1">
-                                Comprar
-                            </button>
-                        </div>
-                    </li>
-                    <li>
-                        <img src='./imagens/note3.webp' />
-                        <h4>Note 3</h4>
-                        <div class="action-buttons">
-                            <button>Detalhes</button>
-                            <button data-id='3' data-name='note 3' data-image="note3.webp" data-price="3000", data-quantity="1">
-                                Comprar
-                            </button>
-                        </div>
-                    </li>
-                    <li>
-                        <img src='./imagens/note4.webp' />
-                        <h4>Note 4</h4>
-                        <div class="action-buttons">
-                            <button>Detalhes</button>
-                            <button data-id='4' data-name='note 4' data-image="note4.webp" data-price="3500", data-quantity="1">
-                                Comprar
-                            </button>
-                        </div>
-                    </li>
-                    <li>
-                        <img src='./imagens/note5.webp' />
-                        <h4>Note 5</h4>
-                        <div class="action-buttons">
-                            <button>Detalhes</button>
-                            <button data-id='5' data-name='note 5' data-image="note5.webp" data-price="4000", data-quantity="1">
-                                Comprar
-                            </button>
-                        </div>
-                    </li>
-                    <li>
-                        <img src='./imagens/note6.webp' />
-                        <h4>Note 6</h4>
-                        <div class="action-buttons">
-                            <button>Detalhes</button>
-                            <button data-id='6' data-name='note 6' data-image="note6.webp" data-price="5000", data-quantity="1">
-                                Comprar
-                            </button>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -109,6 +49,18 @@
             <span>R$ {{PRECO}}</span>
             <input type='number' class="qtd" value='{{QUANTIDADE}}' min='1' max="5" data-id="{{ID}}" />
             <button data-id='{{ID}}' class="remover-item"></button>
+        </li>
+    </template>
+    <template id='produtos-item'>
+        <li>
+            <img src='./imagens/{{IMAGEM}}' />
+            <h4>{{NOME}}</h4>
+            <div class="action-buttons">
+                <button>Detalhes</button>
+                <button data-id='{{ID}}' data-name='{{NOME}}' data-image="{{IMAGEM}}" data-price="{{PRECO}}" data-quantity="1">
+                    Comprar
+                </button>
+            </div>
         </li>
     </template>
     <script type='text/javascript' src='index.js'></script>

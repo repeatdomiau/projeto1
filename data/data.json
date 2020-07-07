@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "note 1",
+    "price": 2000,
+    "quantity": 1,
+    "image": "note1.webp"
+  },
+  {
+    "id": 2,
+    "name": "note 2",
+    "price": 2500,
+    "quantity": 1,
+    "image": "note2.webp"
+  },
+  {
+    "id": 3,
+    "name": "note 3",
+    "price": 3000,
+    "quantity": 1,
+    "image": "note3.webp"
+  },
+  {
+    "id": 4,
+    "name": "note 4",
+    "price": 3500,
+    "quantity": 1,
+    "image": "note4.webp"
+  },
+  {
+    "id": 5,
+    "name": "note 5",
+    "price": 4000,
+    "quantity": 1,
+    "image": "note5.webp"
+  },
+  {
+    "id": 6,
+    "name": "note 6",
+    "price": 5000,
+    "quantity": 1,
+    "image": "note6.webp"
+  }
+]
