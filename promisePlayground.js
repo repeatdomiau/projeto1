@@ -6,7 +6,7 @@ const trace = (value) => {
 const template = '<li data-id="{{id}}">{{nome}}</li>';
 const applyTemplate = (template) => item => template.replace('{{id}}', item.id).replace('{{nome}}', item.name);
 
-fetch('./data/data2.json')
+fetch('./data/data.json')
   .then((response) => response.json())
   .then((arr) => arr.map(applyTemplate(template)))
   .then((arr) => arr.join('\n'))
